@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="16dp"
+    android:background="#F9F9F9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📝 Formulir Data Reservasi"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Spinners -->
+                <Spinner android:id="@+id/spinnerHotel" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <Spinner android:id="@+id/spinnerMeal" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <Spinner android:id="@+id/spinnerMarketSegment" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <Spinner android:id="@+id/spinnerDistribution" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <Spinner android:id="@+id/spinnerDeposit" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <Spinner android:id="@+id/spinnerCustomer" android:layout_width="match_parent" android:layout_height="wrap_content" />
+                <Spinner android:id="@+id/spinnerMonth" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+                <!-- Text Inputs -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Lead Time">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputLeadTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Weekend Nights">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputWeekendNights"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Week Nights">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputWeekNights"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Adults">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputAdults"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Children">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputChildren"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Babies">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputBabies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Previous Cancellations">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputPrevCancel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Booking Changes">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputBookingChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Days in Waiting List">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputWaitingList"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="ADR">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputADR"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberDecimal" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Car Parking Spaces">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputCarParking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Special Requests">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputSpecialRequest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Tombol Prediksi -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPredict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="🔍 Prediksi"
+                    android:layout_marginTop="16dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>

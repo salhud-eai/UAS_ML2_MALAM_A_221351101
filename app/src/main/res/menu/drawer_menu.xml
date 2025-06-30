@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_about"
+            android:title="Tentang Aplikasi"
+            android:icon="@drawable/ic_about"
+            android:orderInCategory="1" />
+
+        <item
+            android:id="@+id/nav_feature"
+            android:title="Fitur"
+            android:icon="@drawable/ic_feature"
+            android:orderInCategory="2" />
+
+        <item
+            android:id="@+id/nav_architecture"
+            android:title="Arsitektur Model"
+            android:icon="@drawable/ic_architecture"
+            android:orderInCategory="3" />
+
+        <item
+            android:id="@+id/nav_simulation"
+            android:title="Simulasi"
+            android:icon="@drawable/ic_simulation"
+            android:orderInCategory="4" />
+        <item
+            android:id="@+id/nav_datasets"
+            android:title="Dataset"
+            android:icon="@drawable/ic_datasets"
+            android:orderInCategory="5" />
+
+
+    </group>
+
+</menu>
